@@ -1,9 +1,9 @@
 -- Base de datos para Sistema de Tutorías Universitarias
 -- Primera iteración - Metodología XP
 
-DROP DATABASE IF EXISTS tutorias_db;
-CREATE DATABASE tutorias_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE tutorias_db;
+DROP DATABASE IF EXISTS railway;
+CREATE DATABASE railway CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE railway;
 
 -- Tabla de usuarios (estudiantes, docentes, admin)
 CREATE TABLE usuarios (
