@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Redirigir todas las rutas al router
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ routes/web.php [QSA,L]
+
+# Configuración de seguridad
+<Files "*.env">
+    Order allow,deny
+    Deny from all
+</Files>
